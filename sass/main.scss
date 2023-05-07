@@ -317,19 +317,37 @@ h1.company-name {
 			background-color: colors.$white;
 			border: 1px solid transparent;
 		}
-        button{
-            padding: 1em;
-            border: 1px solid colors.$gold;
-            background: none;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color .3s, color .3s;
-            &:hover{
-                color: colors.$red;
-                background-color: colors.$gold;
-            }
-        }
+		button {
+			padding: 1em;
+			border: 1px solid colors.$gold;
+			background: none;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.3s, color 0.3s;
+			&:hover {
+				color: colors.$red;
+				background-color: colors.$gold;
+			}
+		}
 	}
+}
+// gallery
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	img {
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+		&:nth-child(odd) {
+			display: none;
+		}
+	}
+}
+.footer {
+	padding: 3em 1em;
+	border-top: 1px solid colors.$darker;
+	text-align: center;
 }
 
 @import './small';
