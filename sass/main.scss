@@ -298,6 +298,39 @@ h1.company-name {
 		color: colors.$gold;
 	}
 }
+// newsletter
+.newsletter {
+	padding: 8em 2em;
+	background-color: colors.$red;
+	text-align: center;
+	&__text {
+		padding: 1em;
+		margin-bottom: 1em;
+		font-size: 4rem;
+		font-weight: 200;
+	}
+	&__form {
+		input {
+			margin-bottom: 1em;
+			padding: 1em;
+			width: 100%;
+			background-color: colors.$white;
+			border: 1px solid transparent;
+		}
+        button{
+            padding: 1em;
+            border: 1px solid colors.$gold;
+            background: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color .3s, color .3s;
+            &:hover{
+                color: colors.$red;
+                background-color: colors.$gold;
+            }
+        }
+	}
+}
 
 @import './small';
 @import './medium';
