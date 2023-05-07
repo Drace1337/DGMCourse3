@@ -8,7 +8,7 @@ const handleNav = () => {
     navMobile.classList.toggle('nav-mobile--active');
     navLinks.forEach(item => {
 		item.addEventListener('click', () => {
-            navBtn.classList.toggle('is-active');
+            navBtn.classList.remove('is-active');
 			navMobile.classList.remove('nav-mobile--active');
            
 		})
